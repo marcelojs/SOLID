@@ -8,5 +8,6 @@ namespace Principios.Solid._5_DIP_DependencyInversionPrinciple.Cenario_Solucao
 {
     class MenuDIP
     {
+        //teste menu dip
     }
 }
