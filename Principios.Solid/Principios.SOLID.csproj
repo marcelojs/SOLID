@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2834C070-0C0C-4E79-AE19-19E3CF24F65F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Principios.Solid</RootNamespace>
+    <AssemblyName>Principios.Solid</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1-SRP-SingleResponsabilityPrinciple\Cenarios_Solucao\Funcionario\Funcionario.cs" />
+    <Compile Include="1-SRP-SingleResponsabilityPrinciple\Cenarios_Solucao\Funcionario\FuncionarioRepository.cs" />
+    <Compile Include="1-SRP-SingleResponsabilityPrinciple\Cenarios_Solucao\Funcionario\FuncionarioService.cs" />
+    <Compile Include="1-SRP-SingleResponsabilityPrinciple\Cenarios_Solucao\Funcionario\CPFService.cs" />
+    <Compile Include="1-SRP-SingleResponsabilityPrinciple\Cenarios_Solucao\Funcionario\EmailService.cs" />
+    <Compile Include="1-SRP-SingleResponsabilityPrinciple\Cenarios_Solucao\Produto\Produto.cs" />
+    <Compile Include="1-SRP-SingleResponsabilityPrinciple\Cenarios_Solucao\Produto\ProdutoRepository.cs" />
+    <Compile Include="1-SRP-SingleResponsabilityPrinciple\Cenarios_Solucao\Produto\ProdutoService.cs" />
+    <Compile Include="1-SRP-SingleResponsabilityPrinciple\Cenarios_Violacao\Funcionario\Funcionario.cs" />
+    <Compile Include="1-SRP-SingleResponsabilityPrinciple\Cenarios_Violacao\Produto\Produto.cs" />
+    <Compile Include="1-SRP-SingleResponsabilityPrinciple\MenuSRP.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\Cenario_Solucao\Solucao\Exame.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\Cenario_Solucao\Solucao\Mamografia.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\Cenario_Solucao\Solucao\RaioX.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\Cenario_Solucao\Solucao\Ressonancia.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\Cenario_Solucao\Solucao\Tomografia.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\Cenario_Solucao\Solucao\Ultrassom.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\Cenario_Solucao\Solucao_Extension_Methods\Exame.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\Cenario_Solucao\Solucao_Extension_Methods\Mamografia.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\Cenario_Solucao\Solucao_Extension_Methods\RaioX.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\Cenario_Solucao\Solucao_Extension_Methods\Ressonancia.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\Cenario_Solucao\Solucao_Extension_Methods\Tomografia.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\Cenario_Solucao\Solucao_Extension_Methods\Ultrassom.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\Cenario_Violacao\Exame.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\Cenario_Violacao\TiposExame.cs" />
+    <Compile Include="2-OCP-OpenClosePrinciple\MenuOCP.cs" />
+    <Compile Include="3-LSP-LiskovSubstitutionPrinciple\MenuLSP.cs" />
+    <Compile Include="3-LSP-LiskovSubstitutionPrinciple\Solucao\Paralelogramo.cs" />
+    <Compile Include="3-LSP-LiskovSubstitutionPrinciple\Solucao\Quadrado.cs" />
+    <Compile Include="3-LSP-LiskovSubstitutionPrinciple\Solucao\Retangulo.cs" />
+    <Compile Include="3-LSP-LiskovSubstitutionPrinciple\Solucao\Start_LSP.cs" />
+    <Compile Include="3-LSP-LiskovSubstitutionPrinciple\Violacao\Quadrado.cs" />
+    <Compile Include="3-LSP-LiskovSubstitutionPrinciple\Violacao\Retangulo.cs" />
+    <Compile Include="3-LSP-LiskovSubstitutionPrinciple\Violacao\Start_LSP.cs" />
+    <Compile Include="4-ISP-InterfaceSegregationPrinciple\Cenarios_Solucao\Impressora\ImpressoraAvancada.cs" />
+    <Compile Include="4-ISP-InterfaceSegregationPrinciple\Cenarios_Solucao\Impressora\ImpressoraBasica.cs" />
+    <Compile Include="4-ISP-InterfaceSegregationPrinciple\Cenarios_Solucao\Impressora\ImpressoraIntermediaria.cs" />
+    <Compile Include="4-ISP-InterfaceSegregationPrinciple\Cenarios_Solucao\Impressora\Interfaces\IImpressoraBasica.cs" />
+    <Compile Include="4-ISP-InterfaceSegregationPrinciple\Cenarios_Violacao\Impressora\Interface\IImpressora.cs" />
+    <Compile Include="4-ISP-InterfaceSegregationPrinciple\Cenarios_Violacao\Impressora\ImpressoraAvancada.cs" />
+    <Compile Include="4-ISP-InterfaceSegregationPrinciple\Cenarios_Violacao\Impressora\ImpressoraBasica.cs" />
+    <Compile Include="4-ISP-InterfaceSegregationPrinciple\Cenarios_Violacao\Impressora\ImpressoraIntermediaria.cs" />
+    <Compile Include="4-ISP-InterfaceSegregationPrinciple\Cenarios_Solucao\Impressora\Interfaces\IImpressoraAvancada.cs" />
+    <Compile Include="4-ISP-InterfaceSegregationPrinciple\Cenarios_Solucao\Impressora\Interfaces\IImpressoraIntermediaria.cs" />
+    <Compile Include="4-ISP-InterfaceSegregationPrinciple\MenuISP.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\FuncionarioExtensionMethods\Validation\FuncionarioValidation.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\FuncionarioExtensionMethods\CPF.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\FuncionarioExtensionMethods\Email.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\FuncionarioExtensionMethods\FuncionarioRepository.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\FuncionarioExtensionMethods\FuncionarioService.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\FuncionarioExtensionMethods\Interfaces\IFuncionarioRepository.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\FuncionarioExtensionMethods\Interfaces\IFuncionarioService.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\Funcionario\CPFService.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\Funcionario\EmailService.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\Funcionario\Funcionario.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\Funcionario\FuncionarioRepository.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\Funcionario\FuncionarioService.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\Funcionario\Interfaces\ICPFService.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\Funcionario\Interfaces\IEmailService.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\Funcionario\Interfaces\IFuncionarioRepository.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\Funcionario\Interfaces\IFuncionarioService.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\FuncionarioExtensionMethods\Funcionario.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Solucao\MenuDIP.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Violacao\CPFService.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Violacao\EmailService.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Violacao\Funcionario.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Violacao\FuncionarioRepository.cs" />
+    <Compile Include="5-DIP-DependencyInversionPrinciple\Cenario_Violacao\FuncionarioService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
